@@ -1,0 +1,27 @@
+/* External CSS: style.css */
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3.5rem; /* Make the text bigger */
+}
+
+/* Apply 'Merriweather' to paragraph elements with class 'lead' */
+p.lead {
+  font-family: 'Merriweather', serif;
+}
+
+/* Gradient background animation */
+.gradient-background {
+  background: linear-gradient(90deg, #F54811, #F511EE, #F57011);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+  
+
+  
