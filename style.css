@@ -5,6 +5,11 @@ h1 {
     font-size: 3.5rem; /* Make the text bigger */
 }
 
+h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3.5rem; /* Make the text bigger */
+}
+
 /* Apply 'Merriweather' to paragraph elements with class 'lead' */
 p.lead {
   font-family: 'Merriweather', serif;
@@ -12,7 +17,7 @@ p.lead {
 
 /* Gradient background animation */
 .gradient-background {
-  background: linear-gradient(90deg, #F54811, #F511EE, #F57011);
+  background: linear-gradient(90deg, #000B58, #003161, #006A67, white);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
