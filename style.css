@@ -1,21 +1,25 @@
-/* External CSS: style.css */
-
-h1 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 3.5rem; /* Make the text bigger */
-}
-
-h2 {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 3.5rem; /* Make the text bigger */
-}
-
-/* Apply 'Merriweather' to paragraph elements with class 'lead' */
-p.lead {
+/* General Typography */
+body, h1, h2, h3, p, ul, li, a {
   font-family: 'Merriweather', serif;
+  color: black; /* Ensure all text is black */
 }
 
-/* Gradient background animation */
+/* Headers */
+h1, h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: black !important;
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: black !important;
+}
+
+/* Background Styling */
 .gradient-background {
   background: linear-gradient(90deg, #000B58, #003161, #006A67, white);
   background-size: 180% 180%;
@@ -27,6 +31,35 @@ p.lead {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-  
 
-  
+/* Section Styling */
+section {
+  margin-bottom: 2rem;
+  padding: 0 15px;
+}
+
+#cv, #about {
+  max-width: 800px; /* Restrict the text width */
+  margin: 0 auto; /* Center-align the content */
+  padding: 20px; /* Add padding around the content */
+}
+
+/* Text Link Styling */
+a {
+  color: #003161; /* Dark blue for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* CV List Styling */
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
