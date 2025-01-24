@@ -21,15 +21,19 @@ h3 {
 
 /* Background Styling */
 .gradient-background {
-  background: linear-gradient(90deg, #000B58, #003161, #006A67, white);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+  background: repeating-radial-gradient(circle, #FF9A8B, #FF6A88, #FFA9A8, #AD88C6, #7469B6);
+  background-size: 200% 200%;
+  animation: gradient-animation 15s ease infinite;
 }
 
 @keyframes gradient-animation {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+.custom-button{
+  font-size: 1rem;
 }
 
 /* Section Styling */
@@ -46,8 +50,11 @@ section {
 
 /* Text Link Styling */
 a {
-  color: #003161; /* Dark blue for links */
+  color: white; /* Dark blue for links */
   text-decoration: none;
+  text-align: center;
+  padding: 10px 0; 
+  font-size: 1rem;
 }
 
 a:hover {
@@ -64,10 +71,5 @@ li {
   margin-bottom: 0.5rem;
 }
 
-footer {
-  text-align: center;
-  padding: 10px 0;
-  color: black !important; /* Black text for readability */
-}
 
 
