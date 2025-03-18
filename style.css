@@ -1,5 +1,5 @@
 /* General Typography */
-body, h1, h2, h3, p, ul, li, a {
+body, p, ul, li, a {
   font-family: 'Merriweather', serif;
   color: black; /* Ensure all text is black */
 }
@@ -9,14 +9,14 @@ h1, h2 {
   font-family: 'Libre Baskerville', serif;
   font-weight: bold;
   margin-top: 1rem;
-  color: black !important;
+  color: black;
 }
 
 h3 {
   font-family: 'Libre Baskerville', serif;
   font-weight: bold;
   margin-top: 1rem;
-  color: black !important;
+  color: black;
 }
 
 /* Background Styling */
@@ -49,8 +49,8 @@ section {
 }
 
 /* Text Link Styling */
-a {
-  color: white; /* Dark blue for links */
+link {
+  color: white !important;
   text-decoration: none;
   text-align: center;
   padding: 10px 0; 
@@ -70,6 +70,4 @@ ul {
 li {
   margin-bottom: 0.5rem;
 }
-
-
 
