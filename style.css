@@ -55,6 +55,7 @@ h3 {
   width: 80%;
   border-radius: 20px;
   overflow: hidden;
+  padding: 0;
 }
 
 /* HOME PAGE container (grid layout) */
@@ -66,7 +67,7 @@ h3 {
 /* ABOUT PAGE and CV PAGE container */
 #flex-container {
   display: flex;
-  align-items: center;
+  align-items: CENTER;
 }
 
 .pets{
