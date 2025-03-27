@@ -1,19 +1,21 @@
 /* General Typography */
-body, p, ul, li, a {
-  font-family: 'Merriweather', serif;
-  color: black; /* Ensure all text is black */
+body,
+p,
+ul,
+li,
+a {
+  font-family: "Merriweather", serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Headers */
-h1, h2 {
-  font-family: 'Libre Baskerville', serif;
-  font-weight: bold;
-  margin-top: 1rem;
-  color: black;
-}
-
+h1,
+h2,
 h3 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: bold;
   margin-top: 1rem;
   color: black;
@@ -21,53 +23,99 @@ h3 {
 
 /* Background Styling */
 .gradient-background {
-  background: repeating-radial-gradient(circle, #FF9A8B, #FF6A88, #FFA9A8, #AD88C6, #7469B6);
+  background: repeating-radial-gradient(
+    circle,
+    #ff9a8b,
+    #ff6a88,
+    #ffa9a8,
+    #ad88c6,
+    #7469b6
+  );
   background-size: 200% 200%;
   animation: gradient-animation 15s ease infinite;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 @keyframes gradient-animation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.custom-button{
-  font-size: 1rem;
+/* Container Layout */
+.container {
+  width: 80%;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-/* Section Styling */
-section {
-  margin-bottom: 2rem;
-  padding: 0 15px;
+/* HOME PAGE container (grid layout) */
+#home-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-#cv, #about {
-  max-width: 800px; /* Restrict the text width */
-  margin: 0 auto; /* Center-align the content */
-  padding: 20px; /* Add padding around the content */
+/* ABOUT PAGE and CV PAGE container */
+#flex-container {
+  display: flex;
+  align-items: center;
 }
 
-/* Text Link Styling */
-link {
-  color: white !important;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px 0; 
-  font-size: 1rem;
+.pets{
+  gap: 5px
+}
+/* Left Text Section */
+.text-section {
+  background-color: #e1afd1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* CV List Styling */
-ul {
-  padding-left: 20px;
-  list-style-type: disc;
-}
-
-li {
+.text-section h1 {
   margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.text-section .subtitle {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+
+/* Buttons */
+.custom-button {
+  font-size: 1rem;
+}
+
+/* Image Section */
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer Styling */
+footer .link a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+footer .link a:hover {
+  color: #ddd;
+  text-decoration: underline;
 }
 
